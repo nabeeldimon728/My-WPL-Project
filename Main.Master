@@ -1,0 +1,335 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="ProjectWPLLAB.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
+
+.blink_text {
+    animation-name: blinker;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+html {
+    box-sizing: border-box
+}
+
+*, *:before, *:after {
+    box-sizing: inherit
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(Images/house.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.menu-area li a {
+font-weight:bold;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 25px;
+    font-size: 14px;
+    line-height: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.menu-area li {
+    list-style: none;
+    display: inline-block;
+}
+
+.custom-padding {
+    padding-top: 25px;
+}
+
+nav {
+    position: relative;
+    padding: 10px 20px 10px 10px;
+    text-align: right;
+    z-index: 1;
+    background: grey;
+    margin: 0 auto;
+    width: calc(100% - 60px);
+}
+
+.logo {
+    width: 15%;
+    float: left;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 2%;
+}
+
+.menu-area li a:hover {
+    background: tomato;
+    color: #fff;
+}
+
+
+nav:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 100%;
+    border-top: 10px solid grey;
+    border-right: 10px solid grey;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+nav:after {
+    position: absolute;
+    content: '';
+    border-top: 10px solid grey;
+    border-left: 10px solid grey;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    top: 100%;
+    right: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: red;
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <header>
+      
+    <div>
+        <a href="Home.aspx">
+        <img src="Images/cmax-logo-new-final-02.png" style="width:16% ; padding-top:10px; float:left; padding-left:30px" /></a>
+    </div>
+        <br />
+   
+
+
+    <div class="navtop">
+        <ul class="menu-area" style="float:right; padding-top:20px; padding-right:40px ">
+
+
+
+
+            <li>
+                <a href="NabeelTV.aspx" style="background-color:black;color:white; border-color:black; border:thin; border-radius:10px"> NABEEL TV</a>
+
+
+            </li>
+
+          
+           
+            <li>
+                <a href="GroupMembers.aspx" style="background-color:black;color:white; border-color:black; border:thin; border-radius:10px"> GROUP MEMBERS</a>
+            </li>
+
+
+        </ul>
+    </div>
+
+    <br />
+
+
+    <div class="custom-padding" style="padding-top:50px">
+      <nav>
+
+
+
+            <ul class="menu-area" style="float:left; padding-top:5px">
+
+                <li>
+                    <a href="Buy.html"> BUY</a>
+                </li>
+                <li>
+                    <a href="Rent.html"> RENT</a>
+                </li>
+                <li>
+                    <a href="Wanted.html"> WANTED</a>
+                </li>
+
+               
+
+
+
+
+
+            </ul>
+
+
+            <ul class="menu-area" style="padding-top:5px">
+                <li>
+                    <a href="Blog.aspx"> BLOG</a>
+                </li>
+                <li>
+                    <a href="HelpSupport.aspx"> HELP</a>
+                </li>
+                <li>
+                    <a href="SignUp.aspx" target="_blank"> REGISTER ICAN</a>
+                </li>
+                <li>
+                    <a href="Login.aspx" target="_blank"> ADD YOUR LISTING</a>
+                </li>
+            </ul>
+       
+ </nav>
+    </div>
+
+           <br />
+    </header>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+       <footer style="background-image:url(Images/Footer.png); background-color:white; padding-bottom:70px; padding-top:70px; ">
+        <br />
+           <a href="Home.aspx">
+        <img style="height:100px; width:20%; margin-left:40%; " src="Images/cmax111.png" /></a>
+        <br /> <br />       <br /> <br />   
+        <div style="text-align:center">
+
+            <a style="padding-left:40px" href="About.aspx"> About</a>
+            <a style="padding-left:40px" href="Contact.aspx"> Contact Us</a>
+            <a style="padding-left:40px" href="Featured.html" > Careers</a>
+            <a style="padding-left:40px" href="HelpSupport.aspx"> Help & Support</a>
+            <a style="padding-left:40px" href="Booking.html"> Booking Featured</a>
+            <a style="padding-left:40px" href="Blog.aspx"> Blog</a>
+            <a style="padding-left:40px" href="NabeelTV.aspx"> Nabeel TV</a>
+
+
+        </div>
+        <br />
+        <h5 class="headingstyles" style=" font-size:medium; font-weight:lighter; text-align:center">
+            All information provided here has been obtained from sources believed reliable, but may be subject to errors, omissions, change of price, prior sale, or withdrawal
+            <br /> without notice.nabeel Real Estate and its affiliates make no representation, warranty or guaranty as to accuracy of any information contained herein.
+            <br />
+            <br />
+<br />
+            <a href="https://www.facebook.com/nabeel.ahmed.927543/" target="_blank">
+            <img src="Images/Icons-01.png" style="height:60px" />
+            </a>
+            <a href="https://www.instagram.com/s.nabeel.ahmed/?hl=en"target="_blank"><img src="Images/Icons-02.png" style="height:60px" /></a>
+            <a href="https://twitter.com/dimon728"target="_blank"> <img src="Images/Icons-03.png" style="height:60px" /></a>
+            <a href="https://www.pinterest.com/nabeelahmes728/_saved/"target="_blank"><img src="Images/Icons-04.png" style="height:60px" /></a>
+            <a href="https://api.whatsapp.com/send/?phone=923238222017"target="_blank"><img src="Images/Icons-05.png" style="height:60px" /></a>
+            <a href="https://www.youtube.com/channel/UCXoHVeILDKX_sUP735aSfqw"target="_blank"><img src="Images/Icons-06.png" style="height:60px" /></a>
+
+            <div>
+                <br />          <br />
+                ©All Copyright reservered by IU - WPL Fall-2020
+            </div>
+            <br />
+
+
+            <br />
+        </h5>
+
+  
+  
+    </footer>
+
+    </form>
+</body>
+</html>

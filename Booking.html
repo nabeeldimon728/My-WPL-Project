@@ -1,0 +1,367 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Velo Slider - with Borders</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Poppins:400,700'>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Montserrat:300,400,600'>
+
+    <link rel="stylesheet" href="css/styleGallery.css">
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Muli:wght@200;400&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@700&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
+    .blink_text {
+        animation-name: blinker;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes blinker {
+        0% {
+            opacity: 1.0;
+        }
+
+        50% {
+            opacity: 0.0;
+        }
+
+        100% {
+            opacity: 1.0;
+        }
+    }
+
+    html {
+        box-sizing: border-box
+    }
+
+    *, *:before, *:after {
+        box-sizing: inherit
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: white;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+    }
+
+
+    .ImgProject {
+        padding-left: 40px;
+        padding-top: 10px;
+        height: 300px;
+        width: 350px;
+    }
+
+    .ButtonImg {
+        margin-left: 2%;
+        height: 40px;
+        font-size: 20px;
+        font-weight: bold;
+        width: 92px;
+        border-radius: 10px;
+    }
+
+    .ImgProjectMap {
+        float: right;
+        padding-right: 50px;
+        padding-top: 20px;
+        height: 600px;
+        width: 850px;
+    }
+
+    .menu-area li a {
+        font-weight: bold;
+        text-decoration: none;
+        color: #fff;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        display: block;
+        padding: 0 25px;
+        font-size: 14px;
+        line-height: 30px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .menu-area li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    .custom-padding {
+        padding-top: 25px;
+    }
+
+    nav {
+        position: relative;
+        padding: 10px 20px 10px 10px;
+        text-align: right;
+        z-index: 1;
+        background: grey;
+        margin: 0 auto;
+        width: calc(100% - 60px);
+    }
+
+    .logo {
+        width: 15%;
+        float: left;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 25px;
+        text-align: left;
+        padding-left: 2%;
+    }
+
+    .menu-area li a:hover {
+        background: tomato;
+        color: #fff;
+    }
+
+
+    nav:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 100%;
+        border-top: 10px solid grey;
+        border-right: 10px solid grey;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+
+    nav:after {
+        position: absolute;
+        content: '';
+        border-top: 10px solid grey;
+        border-left: 10px solid grey;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        top: 100%;
+        right: 0;
+    }
+
+    .imgbuy {
+        margin-left: 2%;
+        padding-left: 20px;
+    }
+</style>
+</head>
+
+<body>
+
+
+    <img src="Images/cmax111.png" style="width:16% ; padding-top:10px; float:left; padding-left:30px" />
+    </div>
+    <div class="navtop">
+        <ul class="menu-area" style="float:right; padding-top:25px; padding-right:40px ">
+
+            <li>
+                <a href="NabeelTV.aspx" style="background-color:black;color:white; border-color:black; border:thin; border-radius:10px"> NABEEL TV</a>
+
+
+            </li>
+
+
+
+            <li>
+                <a href="GroupMembers.aspx" style="background-color:black;color:white; border-color:black; border:thin; border-radius:10px"> GROUP MEMBERS</a>
+            </li>
+
+        </ul>
+    </div>
+
+    <br />
+
+    <br />
+    <div class="custom-padding" style="padding-top:50px">
+        <nav>
+
+
+
+            <ul class="menu-area" style="float:left; padding-top:5px">
+
+                <li>
+                    <a href="Buy.html"> BUY</a>
+                </li>
+                <li>
+                    <a href="Rent.html"> RENT</a>
+                </li>
+                <li>
+                    <a href="Wanted.html"> WANTED</a>
+                </li>
+
+
+
+
+
+
+
+            </ul>
+
+
+            <ul class="menu-area" style="padding-top:5px">
+                <li>
+                    <a href="Blog.aspx"> BLOG</a>
+                </li>
+                <li>
+                    <a href="HelpSupport.aspx"> HELP</a>
+                </li>
+                <li>
+                    <a href="SignUp.aspx" target="_blank"> REGISTER ICAN</a>
+                </li>
+                <li>
+                    <a href="Login.aspx" target="_blank"> ADD YOUR LISTING</a>
+                </li>
+            </ul>
+        </nav>
+
+        <br />
+        <br />
+        <main role="main">
+
+            <!-- Slider -->
+            <section class="velo-slides" data-velo-slider="on" data-velo-theme="light">
+
+
+                <!-- Slide -->
+                <section class="velo-slide">
+                    <!-- Pretitle Hint -->
+                    <span class="velo-slider__hint"><span><span>Chapal Builders</span></span></span> <!-- Slide BG -->
+                    <div class="velo-slide__bg">
+                        <!-- Borders -->
+                        <span class="border"><span></span></span> <!-- Img -->
+                        <figure class="velo-slide__figure" style="background-image: url(Images/2x1a.jpg)"></figure>
+                    </div>
+
+                    <!-- Header -->
+                    <header class="velo-slide__header">
+                        <h3 class="velo-slide__title"><span class="oh"><span></span></span><span class="oh"><span>Chapal Skymark</span></span></h3>
+                        <p class="velo-slide__text"><span class="oh"><span>A 50 Storey luxury residential tower to be raised on Karachi‘s soil is truly reaching out of the stars, both in terms of the architectural brilliance and the lifestyle it has to offer.</span></span></p>
+                        <span class="velo-slide__btn"><a class="btn-draw btn--white" href="#"><span class="btn-draw__text"><span>View Work</span></span></a></span>
+                    </header>
+                </section>
+
+                <!-- Slide -->
+                <section class="velo-slide">
+                    <!-- Pretitle Hint -->
+                    <span class="velo-slider__hint"><span><span>Chapal Builders</span></span></span>
+                    <!-- Slide BG -->
+                    <div class="velo-slide__bg">
+                        <!-- Borders -->
+                        <span class="border"><span></span></span> <!-- Img -->
+                        <figure class="velo-slide__figure" style="        background-image: url(Images/2x1b.jpg)"></figure>
+                    </div>
+
+                    <!-- Header -->
+                    <header class="velo-slide__header">
+                        <h3 class="velo-slide__title"><span class="oh"><span>CourtYard</span></span><span class="oh"><span> 4 Towers </span></span></h3>
+                        <p class="velo-slide__text"><span class="oh"><span>Courtyard, a residential building with commercial showroooms on the ground floor, is an exteansion of Chapal’s successful bungalows and apartments project Chapal Suncity.</span></span></p>
+                        <span class="velo-slide__btn"><a class="btn-draw btn--white" href="#"><span class="btn-draw__text"><span>View Work</span></span></a></span>
+                    </header>
+                </section>
+
+                <!-- Slide - with Video -->
+                <section class="velo-slide">
+                    <!-- Pretitle Hint -->
+                    <span class="velo-slider__hint"><span><span>Chapal Builders</span></span></span>
+                    <!-- Slide BG -->
+                    <div class="velo-slide__bg">
+                        <!-- Borders -->
+                        <span class="border"><span></span></span> <!-- Img -->
+                        <figure class="velo-slide__figure" style="background-image: url(Images/2x1c.jpg)"></figure>
+                        <div class="velo-slide__vid-wrap">
+                            <video autoplay="" class="velo-slide__vid" loop="" poster="">
+                                <source src="http://uiclients.com/assets/videos/ui-chaun.mp4" type="video/mp4"> Wait, are you still looking for a residential or commercial property
+                            </video>
+                        </div>
+                    </div><!-- Header -->
+                    <header class="velo-slide__header">
+                        <h3 class="velo-slide__title"><span class="oh"><span></span></span><span class="oh"><span>Navinta Mall</span></span></h3>
+                        <p class="velo-slide__text"><span class="oh"><span>Navinta Mall that has been designed to become the iconic shopping destination of Karachi located at the populated area of Saddar near Atrium Cinemas. </span></span></p>
+                        <span class="velo-slide__btn"><a class="btn-draw btn--white" href="#"><span class="btn-draw__text"><span>View Project</span></span></a></span>
+                    </header>
+                </section>
+
+
+                <!-- Slides Nav -->
+                <nav class="velo-slides-nav">
+                    <ul class="velo-slides-nav__list">
+                        <li>
+                            <a class="js-velo-slides-prev velo-slides-nav__prev inactive" href="#0"><i class="icon-up-arrow"></i></a>
+                        </li>
+                        <li>
+                            <a class="js-velo-slides-next velo-slides-nav__next" href="#0"><i class="icon-down-arrow"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </main>
+
+        <footer style="background-image:url(Images/Footer.png); background-color:white; padding-bottom:220px; padding-top:80px;     ">
+            <br />
+            <a href="Home.aspx">
+                <img style="height:100px; width:20%; margin-left:40%; " src="Images/cmax111.png" />
+            </a>
+            <br /> <br />
+            <div style="text-align:center">
+
+                <a style="padding-left:40px" href="About.aspx"> About</a>
+                <a style="padding-left:40px" href="Contact.aspx"> Contact Us</a>
+                <a style="padding-left:40px" href="Featured.html"> Careers</a>
+                <a style="padding-left:40px" href="HelpSupport.aspx"> Help & Support</a>
+                <a style="padding-left:40px" href="Booking.html"> Booking Featured</a>
+                <a style="padding-left:40px" href="Blog.aspx"> Blog</a>
+                <a style="padding-left:40px" href="NabeelTV.aspx"> Nabeel TV</a>
+
+
+            </div>
+            <br />
+            <h5 class="headingstyles" style=" font-size:medium; font-weight:lighter; text-align:center">
+                All information provided herein has been obtained from sources believed reliable, but may be subject to errors, omissions, change of price, prior sale, or withdrawal
+                <br /> without notice.Nabeel Real Estate and its affiliates make no representation, warranty or guaranty as to accuracy of any information contained herein.
+                <br />
+                <br />
+                <a href="https://www.facebook.com/nabeel.ahmed.927543/" target="_blank">
+                    <img src="Images/Icons-01.png" style="height:60px" />
+                </a>
+                <a href="https://www.instagram.com/s.nabeel.ahmed/?hl=en" target="_blank"><img src="Images/Icons-02.png" style="height:60px" /></a>
+                <a href="https://twitter.com/dimon728" target="_blank"> <img src="Images/Icons-03.png" style="height:60px" /></a>
+                <a href="https://www.pinterest.com/nabeelahmes728/_saved/" target="_blank"><img src="Images/Icons-04.png" style="height:60px" /></a>
+                <a href="https://api.whatsapp.com/send/?phone=923238222017" target="_blank"><img src="Images/Icons-05.png" style="height:60px" /></a>
+                <a href="https://www.youtube.com/channel/UCXoHVeILDKX_sUP735aSfqw" target="_blank"><img src="Images/Icons-06.png" style="height:60px" /></a>
+
+                <div>
+                    <br />
+                    ©All Copyright reservered by IU - WPL Fall-2020
+                </div>
+                <br />
+
+
+                <br />
+            </h5>
+
+
+
+        </footer>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.0/velocity.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.0/velocity.ui.js'></script>
+
+        <script src="js/indexGallery.js"></script>
+
+</body>
+</html>

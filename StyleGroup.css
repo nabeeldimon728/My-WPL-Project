@@ -1,0 +1,60 @@
+﻿body {
+   
+}
+.hover-animation{
+    float:left;
+    width:100%;
+    height:350px;
+    display:inline-block;
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-position:center;
+    border:1px solid #000;
+    position:relative;
+    overflow:hidden;
+}
+.one{background-image:url(../Images/DHA.jpg);}
+.two {
+    background-image: url(../Images/NK.jpg);
+}
+.three {
+    background-image: url(../Images/Gulshan.jpg);
+}
+.four {
+    background-image: url(../Images/Maleer.jpg);
+}
+.hover-animation:before,
+.hover-animation:after{
+    top:0;
+    bottom:0;
+     right:0;
+     left:0;
+     content:'';
+     position:absolute;
+     background:inherit;
+     transition: 0.3s;
+
+}
+
+.hover-animation:after{
+    padding:6px;
+    display:-webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+    font-size:22px;
+    background: #95a5a6;
+    transform:translateY(100%);
+    content:attr(data-text);
+}
+
+.hover-animation:hover:before{
+    transform:translateY(-50%);
+}
+.hover-animation:hover:after{
+    transform:translateY(0);
+}
